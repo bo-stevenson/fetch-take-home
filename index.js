@@ -48,6 +48,7 @@ function checkInputs() {
     }
     postForm();
 
+
 }
 
 //sets css to display error
@@ -69,6 +70,8 @@ function setSuccess(input){
     formControl.className = "form-control success";
 
 }
+
+
 //Function to get occupation and state lists and append to select
 
 getFormInfo = () => {
@@ -126,8 +129,8 @@ const postForm = () => {
     
    }).done(function(){
        console.log("Post success!")
-       alert("Form Successfully Submitted!");
-    
+        let successMessage = document.getElementById("successAlert");
+        successMessage.className = "strong-control success";
    });
 };
 
