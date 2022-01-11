@@ -3,6 +3,7 @@
 
 
 
+
 getFormInfo = () => {
 
 let queryURL = "https://cors-anywhere.herokuapp.com/" + "https://frontend-take-home.fetchrewards.com/form";
@@ -13,7 +14,7 @@ $.ajax({
     console.log("GET request failed");
 }).done(function (response) {
     console.log("GET request successful");
-    
+
     let states = response.states;
     let occupations = response.occupations;
     let selectOct = document.getElementById("selectOccupation");
