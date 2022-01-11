@@ -124,9 +124,11 @@ const postForm = () => {
        contentType: "application/json",
        //dataType:"JSON",
     
-   }).done(
+   }).done(function(){
        console.log("Post success!")
-   );
+       alert("Form Successfully Submitted!");
+    
+   });
 };
 
 getFormInfo();
