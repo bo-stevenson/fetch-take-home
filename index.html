@@ -14,18 +14,11 @@
         <div class="header">
             <h2>Create an Account</h2>
         </div>
+        <!-- start of form-->
         <form class="form" id="form">
             <div class="form-control">
-                <label>First Name</label>
-                <input type="text" placeholder="First Name" id="firstName">
-                <i class="fa fa-check-circle"></i>
-                <i class="fa fa-exclamation-circle"></i>
-                <small>Error Message</small>
-            </div>
-
-            <div class="form-control">
-                <label>Last Name</label>
-                <input type="text" placeholder="Last Name" id="lastName">
+                <label>Full Name</label>
+                <input type="text" placeholder="Full Name" id="fullName">
                 <i class="fa fa-check-circle"></i>
                 <i class="fa fa-exclamation-circle"></i>
                 <small>Error Message</small>
@@ -54,9 +47,11 @@
 
                 </select>
             </div>
+            <button class="btn btn-secondary">Submit</button>
         </form>
-        <button type="button" class="btn btn-secondary" id=submit>Submit</button>
+        
     </div>
+    <!--link jquery and index.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src= "index.js"></script>
 </body>
