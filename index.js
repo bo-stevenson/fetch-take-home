@@ -23,6 +23,7 @@ function checkInputs() {
     if(fullNameValue === "") {
         
         setError(fullName, "Name cannot be blank");
+        return;
     } else {
         setSuccess(fullName);
         
@@ -31,6 +32,7 @@ function checkInputs() {
     if(emailValue === "") {
         
         setError(email, "Email cannot be blank");
+        return;
     } else {
         setSuccess(email);
         
@@ -39,11 +41,12 @@ function checkInputs() {
     if(passwordValue === "") {
         
         setError(password, "Password cannot be blank");
+        return;
     } else {
         setSuccess(password);
-        postForm();
+        
     }
-
+    postForm();
 
 }
 
